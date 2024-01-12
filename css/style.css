@@ -1,0 +1,57 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #3a3a3a;
+    color: white;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 300px;
+    /* border: 1px solid white; */
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #7d7d7d;
+    box-shadow: 0 0 0 1px #47bdf8;
+    cursor: pointer;
+    line-height: 100px;
+    text-align: center;
+}
+
+.cell:hover {
+    background-color: aliceblue;
+}
+
+.red {
+    font-size: 56px;
+    color: dodgerblue;
+}
+
+.blue {
+    font-size: 56px;
+    color: rgb(101, 231, 36);
+}
+
+.wins {
+    text-decoration: underline;
+}
+
+.win-count {
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border: 2px solid dodgerblue;
+    text-align: left;
+}
+
+.tally {
+    font-size: 30px;
+    color: green;
+}
